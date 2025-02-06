@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #000028;
+}
+
+.split {
+  display: flex;
+  flex-direction: row;
+}
+
+.gutter {
+  background-color: #1a365d;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.gutter.gutter-horizontal {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAeCAYAAADkftS9AAAAIklEQVQoU2M4c+bMfxAGAgYYmwGrIIiDjrELjpo5aiZeMwF+yNnOs5KSvgAAAABJRU5ErkJggg==");
+  cursor: col-resize;
+  width: 10px;
+}
+
+.react-flow__node {
+  background-color: #2c5282;
+  color: white;
+  border: 1px solid #3182ce;
+}
+
+.react-flow__handle {
+  background-color: #3182ce;
+}
+
+.react-flow__edge-path {
+  stroke: #3182ce;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  background-color: rgba(225 225 225 / 1%);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-clip: content-box;
+  background-color: rgba(225 225 225 / 25%);
+  border-radius: 5px;
+  border: 2px solid transparent;
+  &:hover {
+    background-color: rgba(225 225 225 / 50%);
+  }
+}
+
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
