@@ -63,7 +63,11 @@ export default function Chat() {
                   },
                 }}
               >
-                {msg.message.result || msg.message}
+                {msg?.message?.error
+                  ? ""
+                  : msg?.message?.result
+                  ? msg?.message?.result
+                  : msg?.message}
               </ReactMarkdown>
             </div>
           ))

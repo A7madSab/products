@@ -7,7 +7,7 @@ import Chat from "./chat/chat";
 
 export function SplitLayout() {
   return (
-    <Split className="flex h-[60vh]">
+    <Split className="flex h-[70vh]">
       <div className="flex h-full bg-grey-100">
         <Sidebar />
         <Chat />
